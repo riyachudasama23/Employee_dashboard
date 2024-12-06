@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0; /* Start from the very left, including sidebar space */
+  width: 100%; /* Occupy the full width of the screen */
+  height: 60px;
+  background-color: #34495e;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-title {
+  font-size: 24px;
+  font-weight: bold;
+}
