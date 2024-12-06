@@ -10,16 +10,16 @@ function Profile() {
         <div className="profile-section">
           <h3>Personal Information</h3>
           <p>
-            <strong>Name:</strong> John Doe
+            <strong>Name :</strong> John Doe
           </p>
           <p>
-            <strong>Email:</strong> john.doe@example.com
+            <strong>Email :</strong> john.doe@example.com
           </p>
           <p>
-            <strong>Phone:</strong> +123 456 7890
+            <strong>Phone :</strong> +123 456 7890
           </p>
           <p>
-            <strong>Address:</strong> 123 Main Street, Springfield
+            <strong>Address :</strong> 123 Main Street, Springfield
           </p>
         </div>
 
@@ -27,16 +27,16 @@ function Profile() {
         <div className="profile-section">
           <h3>Work Details</h3>
           <p>
-            <strong>Position:</strong> Software Engineer
+            <strong>Position :</strong> Software Engineer
           </p>
           <p>
-            <strong>Joining Date:</strong> January 15, 2022
+            <strong>Joining Date :</strong> January 15, 2022
           </p>
           <p>
-            <strong>Department:</strong> IT
+            <strong>Department :</strong> IT
           </p>
           <p>
-            <strong>Manager:</strong> Jane Smith
+            <strong>Manager :</strong> Jane Smith
           </p>
         </div>
 
@@ -44,13 +44,13 @@ function Profile() {
         <div className="profile-section">
           <h3>Additional Information</h3>
           <p>
-            <strong>Employee ID:</strong> EMP123456
+            <strong>Employee ID :</strong> EMP123456
           </p>
           <p>
-            <strong>Blood Group:</strong> O+
+            <strong>Blood Group :</strong> O+
           </p>
           <p>
-            <strong>Emergency Contact:</strong> +123 987 6543
+            <strong>Emergency Contact :</strong> +123 987 6543
           </p>
           <p>
             <strong>LinkedIn:</strong>{" "}

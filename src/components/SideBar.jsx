@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Sidebar.css";
+import profilePic from "../assets/image.png";
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar-header">
-        <img
-          src="https://via.placeholder.com/100"
-          alt="Profile"
-          className="profile-img"
-        />
+        <img src={profilePic} alt="Profile" className="profile-img" />
         <h3>John Doe</h3>
         <p>Software Engineer</p>
       </div>

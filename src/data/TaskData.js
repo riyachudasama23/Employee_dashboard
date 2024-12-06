@@ -1,0 +1,58 @@
+const TaskData = [
+  {
+    name: "Fix UI bugs",
+    assignedTime: "2024-12-05 10:00 AM",
+    deadline: "2024-12-10 5:00 PM",
+    status: "In Progress",
+    description: "Fix the visual alignment issues on the dashboard.",
+    priority: "High",
+    progress: 60,
+  },
+  {
+    name: "Develop new feature",
+    assignedTime: "2024-12-01 9:00 AM",
+    deadline: "2024-12-15 11:00 PM",
+    status: "Not Started",
+    description: "Add user authentication functionality to the app.",
+    priority: "Medium",
+    progress: 10,
+  },
+  {
+    name: "Write API documentation",
+    assignedTime: "2024-12-03 2:00 PM",
+    deadline: "2024-12-12 3:00 PM",
+    status: "Completed",
+    description: "Document the endpoints for the user API service.",
+    priority: "Low",
+    progress: 100,
+  },
+  {
+    name: "Optimize database queries",
+    assignedTime: "2024-12-04 11:00 AM",
+    deadline: "2024-12-14 4:00 PM",
+    status: "In Progress",
+    description: "Reduce latency by optimizing database calls.",
+    priority: "High",
+    progress: 50,
+  },
+  {
+    name: "Implement responsive design",
+    assignedTime: "2024-12-02 10:30 AM",
+    deadline: "2024-12-18 6:00 PM",
+    status: "Not Started",
+    description: "Make the application mobile-friendly.",
+    priority: "Medium",
+    progress: 0,
+  },
+  {
+    name: "Create marketing materials",
+    assignedTime: "2024-12-07 3:00 PM",
+    deadline: "2024-12-20 12:00 PM",
+    status: "Completed",
+    description: "Design banners and posters for the product launch.",
+    priority: "Low",
+    progress: 100,
+  },
+];
+
+export default TaskData;

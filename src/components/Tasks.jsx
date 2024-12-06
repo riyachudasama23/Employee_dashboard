@@ -1,37 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "../styles/Tasks.css";
+import "../data/TaskData";
+import TaskData from "../data/TaskData";
 
 function Tasks() {
-  const [tasks] = useState([
-    {
-      name: "Fix UI bugs",
-      assignedTime: "2024-12-05 10:00 AM",
-      deadline: "2024-12-10 5:00 PM",
-      status: "In Progress",
-      description: "Fix the UI bugs related to the homepage.",
-      priority: "High",
-      progress: 60, // Progress in percentage
-    },
-    {
-      name: "Develop new feature",
-      assignedTime: "2024-12-01 9:00 AM",
-      deadline: "2024-12-15 11:00 PM",
-      status: "Not Started",
-      description: "Implement the search functionality in the app.",
-      priority: "Medium",
-      progress: 10,
-    },
-    {
-      name: "Write documentation",
-      assignedTime: "2024-12-03 2:00 PM",
-      deadline: "2024-12-12 3:00 PM",
-      status: "Completed",
-      description: "Write the documentation for the new API.",
-      priority: "Low",
-      progress: 100,
-    },
-  ]);
-
   return (
     <div className="tasks-page">
       <h2 className="tasks-heading">Assigned Tasks</h2>
@@ -48,7 +20,7 @@ function Tasks() {
           </tr>
         </thead>
         <tbody>
-          {tasks.map((task, index) => (
+          {TaskData.map((task, index) => (
             <tr className="task-row" key={index}>
               <td>{task.name}</td>
               <td>
@@ -76,10 +48,6 @@ function Tasks() {
               <td>{task.description}</td>
               <td>
                 <div className="task-progress">
-                  <div
-                    className="progress-bar"
-                    style={{ width: `${task.progress}%` }}
-                  ></div>
                   <span>{task.progress}%</span>
                 </div>
               </td>

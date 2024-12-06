@@ -1,23 +1,19 @@
 .tasks-page {
   position: absolute; /* Ensures it adjusts relative to the viewport */
-  top: 60px; /* Height of the header */
-  left: 250px; /* Width of the sidebar */
-  width: calc(100vw - 250px); /* Remaining width after sidebar */
-  height: calc(100vh - 60px); /* Remaining height after header */
-  padding: 20px; /* Padding for content */
-  background-color: #f9f9f9; /* Background color */
-  color: #2c3e50; /* Font color */
+  top: 60px; 
+  left: 250px; 
+  width: calc(100vw - 250px); 
+  height: calc(100vh - 60px); 
+  padding: 20px; 
+  padding-top: 5px;
+  background-color: #191D24; 
+  color: #2c3e50; 
   box-sizing: border-box;
   overflow-y: auto; /* Enable vertical scrolling if necessary */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Styling for the Tasks Component */
-.tasks-page {
-  padding: 20px;
-  background-color: #f9f9f9;
-  overflow-x: auto;
-}
 
 .tasks-heading {
   text-align: center;
@@ -38,17 +34,18 @@
 .tasks-table td {
   padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #4b5a69;
 }
 
 .tasks-table th {
-  background-color: #3498db;
+  background-color: #2c3e50;
   color: white;
   font-size: 18px;
 }
 
 .tasks-table td {
   font-size: 16px;
+  color: #b6bfc9;
 }
 
 /* Mark Tag Styling for Status */
@@ -87,7 +84,7 @@
 
 /* Task Row Hover Effect */
 .task-row:hover {
-  background-color: #f1f1f1;
+  /* background-color: #bfdbf6; */
   cursor: pointer;
 }
 

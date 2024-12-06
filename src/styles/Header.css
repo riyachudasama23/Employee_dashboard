@@ -4,7 +4,7 @@
   left: 0; /* Start from the very left, including sidebar space */
   width: 100%; /* Occupy the full width of the screen */
   height: 60px;
-  background-color: #34495e;
+  background-color: #232935;
   color: white;
   display: flex;
   align-items: center;
