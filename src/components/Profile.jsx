@@ -1,7 +1,26 @@
 import React from "react";
 import "../styles/Profile.css";
+import { FaJs, FaNodeJs, FaReact, FaBootstrap, FaDocker } from "react-icons/fa";
+import {
+  SiTailwindcss,
+  SiKubernetes,
+  SiNextdotjs,
+  SiTypescript,
+} from "react-icons/si";
 
 function Profile() {
+  const skills = [
+    { name: "JavaScript", icon: <FaJs /> },
+    { name: "Node.js", icon: <FaNodeJs /> },
+    { name: "React", icon: <FaReact /> },
+    { name: "Bootstrap", icon: <FaBootstrap /> },
+    { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+    { name: "Kubernetes", icon: <SiKubernetes /> },
+    { name: "Docker", icon: <FaDocker /> },
+    { name: "Next.js", icon: <SiNextdotjs /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+  ];
+
   return (
     <div className="profile-page">
       <h2 className="profile-heading">Employee Profile</h2>
@@ -53,27 +72,22 @@ function Profile() {
             <strong>Emergency Contact :</strong> +123 987 6543
           </p>
           <p>
-            <strong>LinkedIn:</strong>{" "}
-            <a
-              href="https://linkedin.com/in/johndoe"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/johndoe
-            </a>
+            <strong>LinkedIn:</strong> linkedin.com/in/johndoe
           </p>
         </div>
+      </div>
 
-        {/* Section 4: Skills */}
-        <div className="profile-section">
-          <h3>Skills</h3>
-          <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <li>CSS</li>
-            <li>Problem Solving</li>
-          </ul>
+      {/* Section 4: Skills */}
+      <div className="profile-section">
+        <h3>Skills</h3>
+
+        <div className="skills-list">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill-item">
+              <div className="fa-icon">{skill.icon}</div>
+              <span>{skill.name}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -17,3 +17,41 @@
   font-size: 24px;
   font-weight: bold;
 }
+
+.header-search {
+  flex: 1; /* Allows the search bar to expand and take available space */
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 45%;
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #f4f4f4;
+}
+
+.header-profile {
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon i {
+  font-size: 23px;
+  color: #eff7ff; /* Adjust as per your theme */
+  cursor: pointer;
+  margin-right: 28px;
+}
+
+.profile-img-mini {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  margin-right: 35px;
+}

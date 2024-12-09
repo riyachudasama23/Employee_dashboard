@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Attendance.css";
 
 function Attendance() {
   const [status, setStatus] = useState("Not Checked In");
@@ -7,8 +8,8 @@ function Attendance() {
   const handleCheckOut = () => setStatus("Checked Out");
 
   return (
-    <div>
-      <h2>Attendance</h2>
+    <div className="attendance-page">
+      <h1 className="title">Attendance</h1>
       <p>Status: {status}</p>
       <button onClick={handleCheckIn}>Check In</button>
       <button onClick={handleCheckOut}>Check Out</button>

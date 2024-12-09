@@ -1,0 +1,14 @@
+.leave-page {
+  position: absolute; /* Ensures it adjusts relative to the viewport */
+  top: 60px; 
+  left: 250px; 
+  width: calc(100vw - 250px); 
+  height: calc(100vh - 60px); 
+  padding: 20px; 
+  padding-top: 5px;
+  background-color: #191D24; 
+  color: #2c3e50; 
+  box-sizing: border-box;
+  overflow-y: auto; /* Enable vertical scrolling if necessary */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}

@@ -34,7 +34,7 @@
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #34495e;
+  color: #8796c0;
 }
 
 /* Profile Content Grid */
@@ -43,6 +43,8 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
   gap: 20px;
   height: 100%; /* Occupy full height of the container */
+  height: 270px;
+  margin-bottom: 20px;
 }
 
 /* Profile Section Card */
@@ -72,31 +74,32 @@
 }
 
 .skill-item {
-  background-color: #fff;
-  padding: 15px 25px;
-  border-radius: 25px;
+  padding: 10px 40px;
+  padding-bottom: 18px;
+  border-radius: 15px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
-  background: linear-gradient(45deg, #3498db, #8e44ad); /* Gradient background */
-  transition: all 0.3s ease-in-out;
-  width: 150px; /* Fixed width for skill items */
+  background: linear-gradient(45deg, #2C3E50, #4A69BD);
+  transition: all 0.3s ease-in-out; 
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #eff7ff;
+  width: 60px;
 }
 
-/* Hover effect for skill items */
 .skill-item:hover {
-  transform: translateY(-5px); /* Lift the skill item */
-  background: linear-gradient(45deg, #8e44ad, #3498db); /* Inverted gradient on hover */
+  transform: translateY(-3px); /* Lift the skill item */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Additional styling for individual skill items */
 .skill-item span {
   display: inline-block;
   font-size: 20px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 /* Icon styling for skills (if needed) */
@@ -106,3 +109,26 @@
   color: white;
 }
 
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  background-color: #34495e;
+}
+
+.skill-item span {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100px;
+}
+
+.skill-item .fa-icon {
+  font-size: 80px;
+  margin-bottom: -17px;
+}

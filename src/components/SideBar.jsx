@@ -19,13 +19,19 @@ function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link to="/tasks">Tasks</Link>
+            <Link to="/tasks">
+              <i className="fas fa-tasks"></i>Tasks
+            </Link>
           </li>
           <li>
-            <Link to="/attendance">Attendance</Link>
+            <Link to="/attendance">
+              <i className="fas fa-calendar-alt"></i>Attendance
+            </Link>
           </li>
           <li>
-            <Link to="/leave-management">Leave Management</Link>
+            <Link to="/leave-management">
+              <i className="fas fa-plane"></i>Leave Management
+            </Link>
           </li>
         </ul>
       </nav>

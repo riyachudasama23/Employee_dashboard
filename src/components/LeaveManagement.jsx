@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/Leave.css";
 
 function LeaveManagement() {
   const [leaves, setLeaves] = useState([]);
@@ -10,8 +11,8 @@ function LeaveManagement() {
   };
 
   return (
-    <div>
-      <h2>Leave Management</h2>
+    <div className="leave-page">
+      <h1 className="title">Leave Management</h1>
       <input
         type="text"
         placeholder="Enter leave reason"

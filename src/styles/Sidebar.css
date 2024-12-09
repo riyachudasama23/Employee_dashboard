@@ -38,7 +38,7 @@
 
 .sidebar-nav {
   width: 100%;
-  margin: -10px;
+  margin: -10px; 
 }
 
 .sidebar-nav ul {
@@ -52,7 +52,6 @@
 
 .sidebar-nav ul li a {
   display: block;
-  width: 100%;
   padding: 15px 20px;
   color: white;
   text-decoration: none;
@@ -62,4 +61,11 @@
 
 .sidebar-nav ul li a:hover {
   background-color: #34495e;
+}
+
+.sidebar-nav ul li a i {
+  margin-right: 15px; 
+  font-size: 18px; 
+  color: #bdc3c7; 
+  transition: color 0.3s ease; 
 }
