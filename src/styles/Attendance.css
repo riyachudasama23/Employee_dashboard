@@ -12,7 +12,7 @@
   overflow-x: hidden;
 }
 
-.title {
+.title-name{
   text-align: center;
   font-size: 28px;
   color: #8796c0;
@@ -153,4 +153,6 @@
 .notifications li {
   font-size: 14px;
   margin-bottom: 5px;
+  color: white;
+  /* color: #b6bfc9; */
 }

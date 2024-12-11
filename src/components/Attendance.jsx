@@ -61,7 +61,7 @@ const Attendance = () => {
 
   return (
     <div className="attendance-page">
-      <h1 className="title">Attendance Dashboard</h1>
+      <h1 className="title-name">Attendance Dashboard</h1>
       <div className="attendance-container">
         {/* Graph Section */}
         <div className="graph-section">
@@ -95,7 +95,6 @@ const Attendance = () => {
 
         {/* Cards Section */}
         <div className="cards-section">
-          {/* Total Days and Attendance Percentage side by side */}
           <div className="cards-row">
             <div className="card small-card">
               <h3>Total Days</h3>
@@ -107,7 +106,6 @@ const Attendance = () => {
             </div>
           </div>
 
-          {/* Present and Absent side by side */}
           <div className="cards-row">
             <div className="card small-card">
               <h3>Present</h3>
@@ -129,15 +127,14 @@ const Attendance = () => {
                 <div className="calendar-day attended">3</div>
                 <div className="calendar-day">4</div>
                 <div className="calendar-day attended">5</div>
-
-                {/* Add more days as needed */}
               </div>
             </div>
             <div className="card notifications">
               <h3>Notifications</h3>
               <ul>
-                <li>March 3, 2024: Attendance Summary</li>
-                <li>March 4, 2024: Attendance update</li>
+                <li>Mar 3 : Attendance Summary</li>
+                <li>Mar 4 : Attendance update</li>
+                <li>Mar 5 : Attendance update</li>
               </ul>
             </div>
           </div>
