@@ -1,16 +1,15 @@
 .attendance-page {
-  position: absolute; /* Ensures it adjusts relative to the viewport */
-  top: 60px; 
-  left: 250px; 
-  width: calc(100vw - 250px); 
-  height: calc(100vh - 60px); 
-  padding: 20px; 
-  padding-top: 5px;
-  background-color: #191D24; 
-  color: #2c3e50; 
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  width: calc(100vw - 250px);
+  height: calc(100vh - 60px);
+  padding: 20px;
+  background-color: #191d24;
+  color: #2c3e50;
   box-sizing: border-box;
-  overflow-y: auto; /* Enable vertical scrolling if necessary */
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .title {
@@ -18,4 +17,140 @@
   font-size: 28px;
   color: #8796c0;
   margin-bottom: 20px;
+}
+
+.attendance-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.graph-section {
+  flex: 2;
+  background-color: #232935;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.office-timing {
+  color: #8796c0;
+  font-size: 14px;
+}
+
+.dropdown-container {
+  display: flex;
+  gap: 10px;
+}
+
+.month-dropdown,
+.year-dropdown {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #34495e;
+  background-color: #191d24;
+  color: #8796c0;
+}
+
+.cards-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards-row {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #232935;
+  padding: 15px;
+  border-radius: 8px;
+  color: #eff7ff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+  max-width: 250px; /* Add a max-width to limit card size */
+}
+
+.small-card {
+  flex: 1;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #8796c0;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.attendance-percentage p {
+  font-size: 22px;
+  color: #4caf50;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 200px;
+  max-width: 250px; /* Same as the small card size */
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.calendar-day {
+  background-color: #2c3e50;
+  padding: 15px;
+  border-radius: 5px;
+  color: #8796c0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.attended {
+  background-color: #4caf50;
+  color: white;
+}
+
+.absent {
+  background-color: #f44336;
+  color: white;
+}
+
+.notifications {
+  padding: 10px;
+  min-width: 200px;
+  max-width: 250px; /* Same as the small card size */
+}
+
+.notifications ul {
+  list-style-type: none;
+  padding: 0;
+  color: #8796c0;
+}
+
+.notifications li {
+  font-size: 14px;
+  margin-bottom: 5px;
 }
